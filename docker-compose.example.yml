@@ -8,10 +8,10 @@ services:
     ports:
     - "80:80"
     - "443:443"
-    - "2222:2222"
+    - "2222:22"
     volumes:
     - "./data/etc-letsencrypt/live/serveo/cert.pem:/certs/letsencrypt.crt"
     - "./data/etc-letsencrypt/live/serveo/privkey.pem:/certs/letsencrypt.key"
     # you should change the domain.
     # see https://serveo.net/#self-host for more options
-    command: "serveo -port=2222 -http_port=80 -https_port=443 -private_key_path=/root/.ssh/id_ecdsa -cert_dir=/certs -domain example.com"
+    command: "serveo -port=22 -http_port=80 -https_port=443 -private_key_path=/root/.ssh/id_ecdsa -cert_dir=/certs -domain example.com"
