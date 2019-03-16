@@ -1,0 +1,14 @@
+version: '2'
+services:
+  certbot:
+    image: certbot/dns-cloudflare:latest
+    tty: true
+    stdin_open: true
+    volumes:
+    - '../data/etc-letsencrypt:/etc/letsencrypt'
+    - '../data/var-lib-letsencrypt:/var/lib/letsencrypt'
+    - '../data/var-log-letsencrypt:/var/log/letsencrypt'
+    - './cloudflare.ini:/cloudflare.ini'
+    # you need to change email and domain below
+    # see https://certbot.eff.org/docs/using.html#certbot-command-line-options for more options
+    command: certonly -n --agree-tos --cert-name serveo --dns-cloudflare --dns-cloudflare-credentials /cloudflare.ini --email root@example.com -d example.com -d *.example.com
