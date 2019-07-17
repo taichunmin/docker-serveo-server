@@ -2,8 +2,8 @@
 [![GitHub license](https://img.shields.io/github/license/taichunmin/docker-serveo-server.svg)](https://github.com/taichunmin/docker-serveo-server/blob/master/LICENSE)
 ![Docker Stars](https://img.shields.io/docker/stars/taichunmin/serveo-server.svg)
 ![Docker Pulls](https://img.shields.io/docker/pulls/taichunmin/serveo-server.svg)
-![Docker Automated build](https://img.shields.io/docker/automated/taichunmin/serveo-server.svg)
-![Docker Build Status](https://img.shields.io/docker/build/taichunmin/serveo-server.svg)
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/taichunmin/serveo-server.svg)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/taichunmin/serveo-server.svg)
 
 # docker for serveo.net server
 
