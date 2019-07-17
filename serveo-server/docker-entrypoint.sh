@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 set -e
 
 if [ "$1" = 'serveo' ]; then
-  if [ ! -f /root/.ssh/id_ecdsa ]; then
-    ssh-keygen -t ecdsa -b 521 -f /root/.ssh/id_ecdsa -N "" -q
+  if [ ! -f /root/.ssh/id_ed25519 ]; then
+    ssh-keygen -t ed25519 -f /root/.ssh/id_ed25519 -N "" -q
   fi
 
   exec "$@"
