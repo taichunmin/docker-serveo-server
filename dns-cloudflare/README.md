@@ -8,7 +8,7 @@
     cp cloudflare.example.ini cloudflare.ini
     ```
 2. Edit `cloudflare.ini` with your account login email and api key.
-3. Edit `docker-compose.example.yml` with your email and your domain.
+3. Edit `docker-compose.yml` with your email and your domain.
 4. Set `cloudflare.ini` permission.
     ```bash
     chown root:root cloudflare.ini
