@@ -11,4 +11,12 @@ services:
     - './cloudflare.ini:/cloudflare.ini'
     # you need to change email and domain below
     # see https://certbot.eff.org/docs/using.html#certbot-command-line-options for more options
-    command: certonly -n --agree-tos --cert-name serveo --dns-cloudflare --dns-cloudflare-credentials /cloudflare.ini --email root@example.com -d example.com -d *.example.com
+    command: >
+      certonly -n
+      --agree-tos
+      --cert-name serveo
+      --dns-cloudflare
+      --dns-cloudflare-credentials /cloudflare.ini
+      --email root@example.com
+      -d example.com
+      -d *.example.com

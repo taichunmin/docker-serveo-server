@@ -14,4 +14,11 @@ services:
     - "./data/etc-letsencrypt/live/serveo/privkey.pem:/certs/letsencrypt.key"
     # you should change the domain.
     # see https://serveo.net/#self-host for more options
-    command: "serveo -port=22 -http_port=80 -https_port=443 -private_key_path=/root/.ssh/id_ed25519 -cert_dir=/certs -domain example.com"
+    command: >
+      serveo
+      -port=22
+      -http_port=80
+      -https_port=443
+      -private_key_path=/root/.ssh/id_ed25519
+      -cert_dir=/certs
+      -domain example.com
