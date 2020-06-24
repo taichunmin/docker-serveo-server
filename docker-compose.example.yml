@@ -10,8 +10,8 @@ services:
     - "443:443"
     - "2222:22"
     volumes:
-    - "./data/etc-letsencrypt/live/serveo/fullchain.pem:/certs/letsencrypt.crt"
-    - "./data/etc-letsencrypt/live/serveo/privkey.pem:/certs/letsencrypt.key"
+    - "./data/etc-letsencrypt/live/certs/fullchain.pem:/certs/letsencrypt.crt"
+    - "./data/etc-letsencrypt/live/certs/privkey.pem:/certs/letsencrypt.key"
     - "./data/.ssh:/root/.ssh"
     # you should change the domain.
     # see https://serveo.net/#self-host for more options

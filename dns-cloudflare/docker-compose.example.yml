@@ -14,7 +14,7 @@ services:
     command: >
       certonly -n
       --agree-tos
-      --cert-name serveo
+      --cert-name certs
       --dns-cloudflare
       --dns-cloudflare-credentials /cloudflare.ini
       --email root@example.com
